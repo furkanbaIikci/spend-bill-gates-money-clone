@@ -1,0 +1,42 @@
+.buyButton:hover{
+  transition-duration: 500ms;
+  transform: scale(1.1);
+}
+
+.removeButton:hover{
+  transition-duration: 500ms;
+  transform: scale(1.1);
+}
+
+.buyButton:not(hover){
+  transition-duration: 500ms;
+  transform: scale(1);
+}
+
+.removeButton:not(hover){
+  transition-duration: 500ms;
+  transform: scale(1);
+}
+
+#stickyDiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+button:disabled{
+  opacity: 0.5;
+}
